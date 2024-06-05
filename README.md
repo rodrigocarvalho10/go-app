@@ -6,7 +6,7 @@ Esta é uma API REST escrita em Go para cadastrar personagens de filmes e série
 
 ### Criar Personagem
 
-- **URL:** `/personagens`
+- **URL:** `/cadastro`
 - **Método:** `POST`
 - **Body:**
   ```json
