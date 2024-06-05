@@ -28,6 +28,7 @@ Na pasta k8s temos dois arquivos yaml do k8s que faz o deploy da aplicação que
 Uma observação é a sessão abaixo do service.yaml:
 
  type: LoadBalancer
+ 
   externalIPs:
   - 192.168.15.9 
 
