@@ -13,9 +13,9 @@ A API teve uma nova versão lançada, incluímos o cadastro agora em um banco de
 A imagem está sendo atualizada, a mesma ainda está na versão anterior
 - **docker run -d --name go-app -p 8000:8000 rodrigocarvalho92/go-app**
 
-## Criar Personagem - v2
+## Cadastrar uma produção - v2
 
-- **URL:** `/cadastro`
+- **URL:** `/production`
 - **Método:** `POST`
 - **Body:**
   ```json
