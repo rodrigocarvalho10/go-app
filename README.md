@@ -10,7 +10,8 @@ A API teve uma nova versão lançada, incluímos o cadastro agora em um banco de
 
 # main.go
 
-Publiquei o arquivo apesar de ter feito o build direto na imagem para que possam avaliar o código e colaborarem.
+A imagem está sendo atualizada, a mesma ainda está na versão anterior
+- **docker run -d --name go-app -p 8000:8000 rodrigocarvalho92/go-app**
 
 ## Endpoints
 
