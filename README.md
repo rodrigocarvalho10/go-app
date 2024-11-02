@@ -4,11 +4,11 @@ A API teve uma nova versão lançada, incluímos o cadastro agora em um banco de
 
 # Lista de Endpoints - v2
 
-- GET **Lista uma Obra:** `/production`
-- POST **Inclui uma nova obra:** `/production`
-- GET **Lista todas as obras:** `/productions`
-- PUT **Atualiza um cadastro:** `/updproduction`
-- DELETE **Remove um cadastro:** `/rmproduction`
+- **Lista uma Obra:** `/production`
+- **Inclui uma nova obra:** `/production`
+- **Lista todas as obras:** `/productions`
+- **Atualiza um cadastro:** `/updproduction`
+- **Remove um cadastro:** `/rmproduction`
 
 A imagem está sendo atualizada, a mesma ainda está na versão anterior
 - **docker run -d --name go-app -p 8000:8000 rodrigocarvalho92/go-app**
