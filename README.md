@@ -2,21 +2,16 @@
 
 A API teve uma nova versão lançada, incluímos o cadastro agora em um banco de dados sqlite e mais funcionalidades:
 
-- **GET /production**
-- **POST /production**
-- **GET /productions**
-- **DELETE /rmproduction**
-- **PUT /updproduction**
+# Lista de Endpoints - v2
+
+- GET **Lista uma Obra:** `/production`
+- POST **Inclui uma nova obra:** `/production`
+- GET **Lista todas as obras:** `/productions`
+- PUT **Atualiza um cadastro:** `/updproduction`
+- DELETE **Remove um cadastro:** `/rmproduction`
 
 A imagem está sendo atualizada, a mesma ainda está na versão anterior
 - **docker run -d --name go-app -p 8000:8000 rodrigocarvalho92/go-app**
-
-## Endpoints
-
-- **Lista uma Obra:** `/production`
-- **Lista todas as obras:** `/productions`
-- **Atualiza um cadastro:** `/updproduction`
-- **Remove um cadastro:** `/rmproduction`
 
 ### Criar Personagem - v2
 
@@ -25,5 +20,12 @@ A imagem está sendo atualizada, a mesma ainda está na versão anterior
 - **Body:**
   ```json
    {
-   "Name":"Bjorn Ironside", "Movie": false, "Serie": true
-  }
+   "Name":"Bjorn Ironside", 
+   "Producer":"MGM Television", 
+   "Movie": false, 
+   "Serie": true,
+   "Protagonist": "Ragnar Lothbrok",
+   "ReleaseDate": 2013-03-03,
+   "Notice": 10,
+   "Assessment": "Serie excelente, o Ragnar foi o principal"
+   }
