@@ -25,7 +25,6 @@ A imagem está sendo atualizada, a mesma ainda está na versão anterior
    "Movie": false, 
    "Serie": true,
    "Protagonist": "Ragnar Lothbrok",
-   "ReleaseDate": 2013-03-03,
    "Notice": 10,
    "Assessment": "Serie excelente, o Ragnar foi o principal"
    }
