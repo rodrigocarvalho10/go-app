@@ -1,7 +1,12 @@
-# Personagens de Filmes e Séries - API
+# Personagens de Filmes e Séries - API - v2
 
-Esta é uma API escrita em Go para cadastrar personagens de filmes e séries, no exemplo cadastramos os personagens de Vikings e informamos se é um Filme ou Série.
-A API está no ínicio e será utilizada como base para os meus estudos na linguagem.
+A API teve uma nova versão lançada, incluímos o cadastro agora em um banco de dados sqlite e mais funcionalidades:
+
+- **GET /production**
+- **POST /production**
+- **GET /productions**
+- **DELETE /rmproduction**
+- **PUT /updproduction**
 
 # main.go
 
@@ -9,10 +14,12 @@ Publiquei o arquivo apesar de ter feito o build direto na imagem para que possam
 
 ## Endpoints
 
-- **Principal:** `/`
-- **Cadastro:** `/cadastro`
+- **Lista uma Obra:** `/production`
+- **Lista todas as obras:** `/productions`
+- **Atualiza um cadastro:** `/updproduction`
+- **Remove um cadastro:** `/rmproduction`
 
-### Criar Personagem
+### Criar Personagem - v2
 
 - **URL:** `/cadastro`
 - **Método:** `POST`
@@ -21,17 +28,3 @@ Publiquei o arquivo apesar de ter feito o build direto na imagem para que possam
    {
    "Name":"Bjorn Ironside", "Movie": false, "Serie": true
   }
-
-# Arquivos YAML
-
-Na pasta k8s temos dois arquivos yaml do k8s que faz o deploy da aplicação que foi publicada no docker hub e também cria o service para expor a porta da aplicação.
-Uma observação é a sessão abaixo do service.yaml:
-
- type: LoadBalancer
-
-  externalIPs:
-  - 192.168.15.9 
-
-O externalIPs eu apontei para o IP do meu cluster local, pois sem a chave o kubernetes ficou como pending o processo de atribuição do EXTERNAL IP, dessa forma fiquem atento ao de vocês caso forem subir no kubernetes igual o meu exemplo.
-
-
