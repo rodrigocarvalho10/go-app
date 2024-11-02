@@ -8,8 +8,6 @@ A API teve uma nova versão lançada, incluímos o cadastro agora em um banco de
 - **DELETE /rmproduction**
 - **PUT /updproduction**
 
-# main.go
-
 A imagem está sendo atualizada, a mesma ainda está na versão anterior
 - **docker run -d --name go-app -p 8000:8000 rodrigocarvalho92/go-app**
 
