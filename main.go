@@ -2,6 +2,7 @@ package main
 
 import (
 	"github.com/rodrigocarvalho10/go-app/configuration"
+	_ "github.com/rodrigocarvalho10/go-app/handler"
 	"github.com/rodrigocarvalho10/go-app/router"
 )
 
