@@ -15,8 +15,7 @@ type Productions struct {
 	Movie       bool
 	Series      bool
 	Protagonist string
-	ReleaseDate time.Time
-	Notice      string
+	Notice      int64
 	Assessment  string
 }
 
@@ -32,7 +31,6 @@ type ProductionsResponse struct {
 	Movie       bool      `json:"movie"`
 	Series      bool      `json:"series"`
 	Protagonist string    `json:"protagonist"`
-	ReleaseDate time.Time `json:"releaseDate"`
-	Notice      string    `json:"notice"`
+	Notice      int64     `json:"notice"`
 	Assessment  string    `json:"assessment"`
 }
