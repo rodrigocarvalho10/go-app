@@ -26,5 +26,5 @@ A imagem está sendo atualizada, a mesma ainda está na versão anterior
    "Serie": true,
    "Protagonist": "Ragnar Lothbrok",
    "Notice": 10,
-   "Assessment": "Serie excelente, o Ragnar foi o principal"
+   "Assessment": "Serie excelente, o Ragnar foi monstro"
    }
