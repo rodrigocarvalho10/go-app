@@ -1,7 +1,6 @@
 package handler
 
 import (
-	"github.com/rodrigocarvalho10/go-app/configuration"
 	"gorm.io/gorm"
 )
 

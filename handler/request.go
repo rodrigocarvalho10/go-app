@@ -49,8 +49,8 @@ func (r *CreateProductionRequest) Validate() error {
 type UpdateProductionRequest struct {
 	Name        string `json:"name"`
 	Producer    string `json:"producer"`
-	Movie       bool   `json:"movie"`
-	Series      bool   `json:"series"`
+	Movie       *bool  `json:"movie"`
+	Series      *bool  `json:"series"`
 	Protagonist string `json:"protagonist"`
 	Notice      int64  `json:"notice"`
 	Assessment  string `json:"assessment"`
