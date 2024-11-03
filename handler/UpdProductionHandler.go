@@ -10,7 +10,7 @@ import (
 //	@BasePath	/api/v1
 
 //	@Summary		Update production
-//	@Description	Update a job production
+//	@Description	Update a movie or serie
 //	@Tags			productions
 //	@Accept			json
 //	@Produce		json
@@ -68,6 +68,7 @@ func UpdProductionHandler(ctx *gin.Context) {
 	if request.Notice > 0 {
 		production.Notice = request.Notice
 	}
+
 	if request.Assessment != "" {
 		production.Assessment = request.Assessment
 	}

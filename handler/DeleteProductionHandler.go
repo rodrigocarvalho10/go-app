@@ -10,16 +10,16 @@ import (
 
 //	@BasePath	/api/v1
 
-//	@Summary		Delete opening
-//	@Description	Delete a new job opening
-//	@Tags			Openings
+//	@Summary		Delete production
+//	@Description	Delete a new job production
+//	@Tags			productions
 //	@Accept			json
 //	@Produce		json
-//	@Param			id	query		string	true	"Opening identification"
-//	@Success		200	{object}	DeleteOpeningResponse
+//	@Param			id	query		string	true	"production identification"
+//	@Success		200	{object}	DeleteproductionResponse
 //	@Failure		400	{object}	ErrorResponse
 //	@Failure		404	{object}	ErrorResponse
-//	@Router			/opening [delete]
+//	@Router			/handler [delete]
 
 func DeleteProductionHandler(ctx *gin.Context) {
 

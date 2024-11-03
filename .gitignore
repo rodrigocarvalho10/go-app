@@ -5,3 +5,4 @@ service.yaml
 
 mux/
 src/
+.vagrant

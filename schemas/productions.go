@@ -19,7 +19,7 @@ type Productions struct {
 	Assessment  string
 }
 
-// Criamos a amarração entre os campos com relação aos campos do json
+// Criamos a amarraï¿½ï¿½o entre os campos com relaï¿½ï¿½o aos campos do json
 
 type ProductionsResponse struct {
 	ID          uint      `json:"id"`

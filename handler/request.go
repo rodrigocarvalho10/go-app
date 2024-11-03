@@ -6,7 +6,7 @@ func errParamIsRequired(name, typ string) error {
 	return fmt.Errorf("param: %s (type: %s) is required", name, typ)
 }
 
-//Create Opening
+//Create Production
 
 type CreateProductionRequest struct {
 	Name        string `json:"name"`
@@ -57,10 +57,10 @@ type UpdateProductionRequest struct {
 }
 
 func (r *UpdateProductionRequest) Validate() error {
-	// If any field is provided, validation is truthy
-	if r.Name == "" && r.Producer == "" && r.Movie == nil && r.Series == nil && r.Protagonist == "" && r.Notice <= 0 && r.Assessment == "" {
+	// If any field is provided, validation is true
+	if r.Name != "" && r.Producer != "" && r.Movie != nil && r.Series != nil && r.Protagonist != "" && r.Notice > 0 && r.Assessment != "" {
 		return nil
 	}
-	// If none of the fields were provided, return falsy
+	// If none of the fields were provided, return false
 	return fmt.Errorf("at least one valid field must be provided")
 }
