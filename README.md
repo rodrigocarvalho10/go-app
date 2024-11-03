@@ -20,7 +20,7 @@ A imagem está sendo atualizada, a mesma ainda está na versão anterior
 - **Body:**
   ```json
    {
-   "Name":"Vikinhs", 
+   "Name":"Vikings", 
    "Producer":"MGM Television", 
    "Movie": false, 
    "Series": true,
