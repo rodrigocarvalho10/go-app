@@ -1,4 +1,4 @@
-# Personagens de Filmes e Séries - API - v2
+# Filmes e Séries - API - v2
 
 A API teve uma nova versão lançada, incluímos o cadastro agora em um banco de dados sqlite e mais funcionalidades:
 
@@ -13,14 +13,14 @@ A API teve uma nova versão lançada, incluímos o cadastro agora em um banco de
 A imagem está sendo atualizada, a mesma ainda está na versão anterior
 - **docker run -d --name go-app -p 8000:8000 rodrigocarvalho92/go-app**
 
-## Cadastrar uma produção - v2
+## Cadastrar uma série ou filme - v2
 
 - **URL:** `/production`
 - **Método:** `POST`
 - **Body:**
   ```json
    {
-   "Name":"Bjorn Ironside", 
+   "Name":"Vikinhs", 
    "Producer":"MGM Television", 
    "Movie": false, 
    "Serie": true,
