@@ -23,7 +23,7 @@ A imagem está sendo atualizada, a mesma ainda está na versão anterior
    "Name":"Vikinhs", 
    "Producer":"MGM Television", 
    "Movie": false, 
-   "Serie": true,
+   "Series": true,
    "Protagonist": "Ragnar Lothbrok",
    "Notice": 10,
    "Assessment": "Serie excelente, o Ragnar foi monstro"
