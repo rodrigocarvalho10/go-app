@@ -10,8 +10,8 @@ A API teve uma nova versão lançada, incluímos o cadastro agora em um banco de
 - **Atualiza um cadastro:** `/updproduction`
 - **Remove um cadastro:** `/rmproduction`
 
-A imagem está sendo atualizada, a mesma ainda está na versão anterior
-- **docker run -d --name go-app -p 8000:8000 rodrigocarvalho92/go-app**
+Segue o comando para usar e brincar com a aplicação
+- **docker run -d --name go-app -p 8000:8000 rodrigocarvalho92/go-app-v2**
 
 ## Cadastrar uma série ou filme - v2
 
