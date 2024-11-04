@@ -46,10 +46,11 @@ Segue o comando para usar e brincar com a aplicação
 - **Método:** `POST`
 - **Body:**
 - **Parameters:**
-  ```
+ ```
   key: id
   value: 1
-  
+
+  ```  
   ```json
    {
    "Name":"Vikings", 
@@ -59,7 +60,8 @@ Segue o comando para usar e brincar com a aplicação
    "Protagonist": "Ragnar Lothbrok",
    "Notice": 9, //Atualizamos a nota
    "Assessment": "Serie excelente, o Ragnar foi monstro"
-   }
+   }`
+  ```
 
 ## Deletar uma série ou filme - v2
 
