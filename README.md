@@ -33,9 +33,41 @@ Segue o comando para usar e brincar com a aplicação
 
 - **URL:** `/production`
 - **Método:** `GET`
+- **Params:**
+  ```
+  key: id
+  value: 1
+
+  ```
+
+## Atualizar uma série ou filme - v2
+
+- **URL:** `/updproduction`
+- **Método:** `POST`
+- **Body:**
 - **Parameters:**
   ```
   key: id
   value: 1
   
+  ```json
+   {
+   "Name":"Vikings", 
+   "Producer":"MGM Television", 
+   "Movie": false, 
+   "Series": true,
+   "Protagonist": "Ragnar Lothbrok",
+   "Notice": 9, //Atualizamos a nota
+   "Assessment": "Serie excelente, o Ragnar foi monstro"
+   }
+
+## Deletar uma série ou filme - v2
+
+- **URL:** `/rmproduction`
+- **Método:** `POST`
+- **Body:**
+- **Parameters:**
+  ```
+  key: id
+  value: 1
   ```
