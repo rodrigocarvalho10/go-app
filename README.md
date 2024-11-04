@@ -28,3 +28,14 @@ Segue o comando para usar e brincar com a aplicação
    "Notice": 10,
    "Assessment": "Serie excelente, o Ragnar foi monstro"
    }
+  
+## Buscar um filme ou série
+
+- **URL:** `/production`
+- **Método:** `GET`
+- **Parameters:**
+  ```
+  key: id
+  value: 1
+  
+  ```
