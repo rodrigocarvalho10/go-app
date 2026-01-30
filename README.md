@@ -1,36 +1,75 @@
-# Personagens de Filmes e Séries - API
+# Filmes e Séries - API - v2
 
-Esta é uma API REST escrita em Go para cadastrar personagens de filmes e séries, no exemplo cadastramos os personagens de Vikings e informamos se é um Filme ou Série.
-A API está no ínicio e será utilizada como base para os meus estudos na linguagem.
+A API teve uma nova versão lançada, incluímos o cadastro agora em um banco de dados sqlite e mais funcionalidades:
 
-# main.go
+## Lista de Endpoints - v2
 
-Publiquei o arquivo apesar de ter feito o build direto na imagem para que possam avaliar o código e colaborarem.
+- **Lista uma Obra:** `/production`
+- **Inclui uma nova obra:** `/production`
+- **Lista todas as obras:** `/productions`
+- **Atualiza um cadastro:** `/updproduction`
+- **Remove um cadastro:** `/rmproduction`
 
-## Endpoints
+Segue o comando para usar e brincar com a aplicação
+- **docker run -d --name go-app -p 8000:8000 rodrigocarvalho92/go-app-v2**
 
-- **URL:** `/`
-- **URL:** `/cadastro`
+## Cadastrar uma série ou filme - v2
 
-### Criar Personagem
-
-- **URL:** `/cadastro`
+- **URL:** `/production`
 - **Método:** `POST`
 - **Body:**
   ```json
    {
-   "Name":"Bjorn Ironside", "Movie": false, "Serie": true
-  }
+   "Name":"Vikings", 
+   "Producer":"MGM Television", 
+   "Movie": false, 
+   "Series": true,
+   "Protagonist": "Ragnar Lothbrok",
+   "Notice": 10,
+   "Assessment": "Serie excelente, o Ragnar foi monstro"
+   }
+  
+## Buscar um filme ou série
 
-# Arquivos YAML
+- **URL:** `/production`
+- **Método:** `GET`
+- **Params:**
+  ```
+  key: id
+  value: 1
 
-Na pasta k8s temos dois arquivos yaml do k8s que faz o deploy da aplicação que foi publicada no docker hub e também cria o service para expor a porta da aplicação.
-Uma observação é a sessão abaixo do service.yaml:
+  ```
 
- type: LoadBalancer
-  externalIPs:
-  - 192.168.15.9 
+## Atualizar uma série ou filme - v2
 
-O externalIPs eu apontei para o IP do meu cluster local, pois sem a chave o kubernetes ficou como pending o processo de atribuição do EXTERNAL IP, dessa forma fiquem atento ao de vocês caso forem subir no kubernetes igual o meu exemplo.
+- **URL:** `/updproduction`
+- **Método:** `POST`
+- **Body:**
+- **Parameters:**
+ ```
+  key: id
+  value: 1
 
+  ```  
+  ```json
+   {
+   "Name":"Vikings", 
+   "Producer":"MGM Television", 
+   "Movie": false, 
+   "Series": true,
+   "Protagonist": "Ragnar Lothbrok",
+   "Notice": 9, //Atualizamos a nota
+   "Assessment": "Serie excelente, o Ragnar foi monstro"
+   }
+  ```
 
+## Deletar uma série ou filme - v2
+
+- **URL:** `/rmproduction`
+- **Método:** `POST`
+- **Body:**
+- **Parameters:**
+  ```
+  key: id
+  value: 1
+  ```

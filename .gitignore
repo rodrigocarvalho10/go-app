@@ -1,4 +1,8 @@
 # Ignorar o arquivo Dockerfile
 Dockerfile
+deployment.yaml
+service.yaml
 
 mux/
+src/
+.vagrant

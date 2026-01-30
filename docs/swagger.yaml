@@ -1,0 +1,10 @@
+basePath: /api/v1
+host: github.com/rodrigocarvalho10/go-app
+info:
+  contact: {}
+  description: This is an example of an API for registering film productions
+  termsOfService: http://swagger.io/terms/
+  title: Movies and Series - Productions
+  version: 0.1.2
+paths: {}
+swagger: "2.0"
